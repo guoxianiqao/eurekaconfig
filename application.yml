@@ -1,0 +1,30 @@
+#本机端口
+server:
+  port: 8761
+  
+spring:
+  application:
+    name: eureka-service
+    
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+  server:
+    enable-self-preservation: false # 关闭自我保护模式（缺省为打开）
+    eviction-interval-timer-in-ms: 1000 # 扫描失效服务的间隔时间（缺省为60*1000ms）
+  client:
+    #由于该应用为注册中心,设置为false,表明不向注册中心注册自己
+    register-with-eureka: true
+    #是否从eureka服务器获取注册信息，这里不需要
+    fetch-registry: true
+    service-url:
+      defaultZone: http://${eureka.instance.ip-address}:${server.port}/eureka/
+      
+logging:
+  level:
+    com:
+      netflix:
+        eureka: OFF
+        discovery: OFF
