@@ -1,4 +1,4 @@
-#本机端口
+#鏈満绔彛斤斤计较军军军军军军军军军
 server:
   port: 8761
   
@@ -12,12 +12,12 @@ eureka:
     prefer-ip-address: true
     ip-address: 127.0.0.1
   server:
-    enable-self-preservation: false # 关闭自我保护模式（缺省为打开）
-    eviction-interval-timer-in-ms: 1000 # 扫描失效服务的间隔时间（缺省为60*1000ms）
+    enable-self-preservation: false # 鍏抽棴鑷垜淇濇姢妯″紡锛堢己鐪佷负鎵撳紑锛�
+    eviction-interval-timer-in-ms: 1000 # 鎵弿澶辨晥鏈嶅姟鐨勯棿闅旀椂闂达紙缂虹渷涓�60*1000ms锛�
   client:
-    #由于该应用为注册中心,设置为false,表明不向注册中心注册自己
+    #鐢变簬璇ュ簲鐢ㄤ负娉ㄥ唽涓績,璁剧疆涓篺alse,琛ㄦ槑涓嶅悜娉ㄥ唽涓績娉ㄥ唽鑷繁
     register-with-eureka: true
-    #是否从eureka服务器获取注册信息，这里不需要
+    #鏄惁浠巈ureka鏈嶅姟鍣ㄨ幏鍙栨敞鍐屼俊鎭紝杩欓噷涓嶉渶瑕�
     fetch-registry: true
     service-url:
       defaultZone: http://${eureka.instance.ip-address}:${server.port}/eureka/
