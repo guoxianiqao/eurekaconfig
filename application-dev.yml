@@ -1,34 +1,3 @@
-#这个就是互相测试用的，继续测试，搞起来！！！
-#再次测试这个GIT获取信息！！！
-#再次修改这个GIT的提交信息用于测试！！！
-#再再次修改这个GIT的提交信息用于测试！！！
-#再再再次修改这个GIT的提交信息用于测试！！！
-#再再再次修改这个GIT的提交信息用于测试！！！再再再次修改这个GIT的提交信息用于测试！！！
-#再再再次修改这个GIT的提交信息用于测试！！！再再再次修改这个GIT的提交信息用于测试！！！再再再次修改这个GIT的提交信息用于测试！！！
-server:
-  port: 8761
-  
-spring:
-  application:
-    name: eureka-service
-    
-eureka:
-  instance:
-    hostname: localhost
-    prefer-ip-address: true
-    ip-address: 127.0.0.1
-  server:
-    enable-self-preservation: false 
-    eviction-interval-timer-in-ms: 1000 
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://${eureka.instance.ip-address}:${server.port}/eureka/
-      
-logging:
-  level:
-    com:
-      netflix:
-        eureka: OFF
-        discovery: OFF
+foo: foo version 001 
+
+foo2: foo version 002vvvvvvv  
